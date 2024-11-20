@@ -3,61 +3,61 @@
 @import url("https://use.typekit.net/ylt2xfr.css");
 
 :root {
-    --yellow-color: #f7c123;
-    --orange-color: #f0a538;
+  --yellow-color: #a28149;
+  --orange-color: #372e2a;
 }
 body {
-    font-family: omnes-pro, sans-serif;
-    font-style: normal;
+  font-family: omnes-pro, sans-serif;
+  font-style: normal;
 }
 
 h1 {
-    font-weight: 600;
-    font-size: 48px;
-    color: var(--orange-color);
-    margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--orange-color);
+  margin-bottom: 20px;
 }
 
 h2 {
-    font-weight: 400;
-    font-size: 28px;
-    margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 
 p {
-    font-weight: 400;
-    font-size: 28px;
-    margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 40px;
 }
 
 .links a {
-    font-weight: 600;
-    font-size: 24px;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 a {
-    text-decoration: none;
-    color: var(--yellow-color);
+  text-decoration: none;
+  color: var(--yellow-color);
 }
 a:hover {
-    color: var(--orange-color);
+  color: var(--yellow-color);
 }
 
 .btn {
-    font-weight: 600;
-    font-size: 28px;
-    --bs-btn-hover-bg: var(--yellow-color);
-    --bs-btn-hover-border-color: var(--yellow-color);
+  font-weight: 600;
+  font-size: 28px;
+  --bs-btn-hover-bg: var(--yellow-color);
+  --bs-btn-hover-border-color: var(--yellow-color);
 }
 
 .btn-primary {
-    --bs-btn-bg: var(--orange-color);
-    --bs-btn-border-color: var(--orange-color);
+  --bs-btn-bg: var(--orange-color);
+  --bs-btn-border-color: var(--orange-color);
 
-    --bs-btn-color: #000;
-    --bs-btn-hover-color: #000;
+  --bs-btn-color: #000;
+  --bs-btn-hover-color: #000;
 }
 
 .container {
-    max-width: 60em;
+  max-width: 60em;
 }
