@@ -4,7 +4,8 @@
 
 :root {
   --yellow-color: #a28149;
-  --orange-color: #372e2a;
+  --brown-color: #372e2a;
+  --orange-color: #f0a538;
 }
 body {
   font-family: omnes-pro, sans-serif;
@@ -30,6 +31,14 @@ p {
   margin-bottom: 40px;
 }
 
+.follow {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 80px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
 .links a {
   font-weight: 600;
   font-size: 24px;
@@ -39,8 +48,9 @@ a {
   text-decoration: none;
   color: var(--yellow-color);
 }
+
 a:hover {
-  color: var(--yellow-color);
+  color: var(--orange-color);
 }
 
 .btn {
