@@ -15,13 +15,13 @@ body {
 h1 {
   font-weight: 600;
   font-size: 48px;
-  color: var(--orange-color);
-  margin-bottom: 20px;
+  color: var(--yellow-color);
 }
 
 h2 {
   font-weight: 400;
   font-size: 28px;
+  color: var(--yellow-color);
   margin-bottom: 30px;
 }
 
@@ -47,6 +47,10 @@ p {
 a {
   text-decoration: none;
   color: var(--yellow-color);
+}
+a.link {
+  color: var(--yellow-color);
+  text-decoration: underline;
 }
 
 a:hover {
