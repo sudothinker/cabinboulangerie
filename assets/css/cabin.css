@@ -3,11 +3,20 @@
 .menu-badge-always{background:#a28149;color:#fff;border:1px solid #a28149}
 .menu-badge-occasional{background:transparent;color:#7a6236;border:1px solid #c9b48c}
 .gh-article-header .menu-badge{margin:0 auto 16px;align-self:center}
-.gh-list.grid .gh-list-feed .menu-group{grid-column:1/-1;text-align:center;margin:8px 0 -24px}
-.gh-list.grid .gh-list-feed .menu-group+.gh-list-item{margin-top:0}
-.menu-group h2{font-family:"Lobster Two",sans-serif;font-weight:700;font-size:clamp(2.6rem,1.5vw + 2rem,3.6rem);margin:0}
-.menu-group p{margin:6px 0 0;color:#6b6157;font-size:1.6rem}
-.menu-group-occasional{margin-top:40px!important}
+.gh-list.grid .gh-list-feed .menu-group{grid-column:1/-1;margin:0 0 -32px}
+.menu-group h2{display:flex;align-items:center;gap:16px;margin:0;font-family:var(--gh-font-body,sans-serif);font-size:1.4rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#7a6236;line-height:1.4}
+.menu-group h2:before,.menu-group h2:after{content:"";flex:1;height:1px;background:#e3d8c4}
+.menu-group h2 span{font-weight:400;letter-spacing:.02em;text-transform:none;color:#8b8178}
+.menu-group h2 span:before{content:"\00b7";margin-right:10px;color:#c9b48c}
+.menu-group h2 a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.gh-list.grid .gh-list-feed .menu-group-occasional{margin-top:24px}
+@media (max-width:767px){.gh-list.grid .gh-list-feed .menu-group{margin-bottom:0}.menu-group h2{flex-wrap:wrap;justify-content:center;text-align:center;gap:4px 10px}.menu-group h2:before,.menu-group h2:after{display:none}.menu-group h2 span{flex-basis:100%}.menu-group h2 span:before{display:none}}
+
+/* Tighter spacing than the original theme */
+.gh-archive-title{margin-top:32px;margin-bottom:28px}
+:root{--header-spacing:40px}
+.gh-article-header,.page-template .gh-article-header,.post-template .gh-article-header{margin-top:40px}
+.gh-foot{padding-top:48px;padding-bottom:48px}
 
 /* Contact */
 .cabin-contact{padding-top:clamp(64px,8vw,112px);padding-bottom:clamp(48px,6vw,88px);text-align:center;scroll-margin-top:80px}
@@ -22,3 +31,9 @@
 @media (max-width:767px){.cabin-contact-links{grid-template-columns:1fr;max-width:420px}.cabin-contact-links span{overflow-wrap:anywhere}}
 .cabin-foot-contact{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 10px;margin-bottom:10px;font-size:1.4rem}
 .cabin-foot-contact a{color:inherit}
+
+/* Order button in the nav */
+.gh-head .nav .nav-order a{display:inline-block;background:#a28149;color:#fff!important;padding:8px 18px;border-radius:999px;font-weight:600;line-height:1.2;transition:background-color .15s}
+.gh-head .nav .nav-order a:hover{background:#8a6c39;opacity:1}
+.is-head-open#gh-head .nav .nav-order{margin-top:8px}
+.post-template .gh-article{padding-top:0}
