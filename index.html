@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cabin Boulangerie - French Bread, Local Table.</title>
+    <title>Cabin Boulangerie - French Bread, Local Table</title>
     <link rel="stylesheet" href="assets/built/screen.css">
+    <link rel="stylesheet" href="assets/css/cabin.css">
 
             <link rel="preload" as="image" href="content/images/2025/06/IMG_9291.jpg">
 
@@ -88,6 +89,10 @@
     <link rel="stylesheet" type="text/css" href="public/cards.min.css">
     <meta name="google-site-verification" content="7G_JtewOHEyEjDpzulWjqeO41b636Bs3MWY-ubhyNVU" />
     <link rel="preconnect" href="https://fonts.bunny.net"><link rel="stylesheet" href="https://fonts.bunny.net/css?family=poppins:400,500,600|roboto:400,500,700"><style>:root {--gh-font-heading: Poppins;--gh-font-body: Roboto;}</style>
+    <style>
+        .gh-header-logo{margin:0 auto 20px;line-height:0}
+        .gh-header-logo img{width:clamp(140px, 18vw, 220px);height:auto;border-radius:50%;box-shadow:0 4px 24px rgba(0,0,0,.35)}
+    </style>
 </head>
 
 <body class="home-template gh-font-heading-poppins gh-font-body-roboto is-font-serif">
@@ -98,9 +103,6 @@
     <div class="gh-head-inner gh-inner">
         <div class="gh-head-brand">
             <div class="gh-head-brand-wrapper">
-                <a class="gh-head-logo" href="./">
-                        <img src="content/images/2025/06/Cabin-Logo-1.png" alt="Cabin Boulangerie - French Bread, Local Table">
-                </a>
             </div>
             <!-- <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search><svg width="20" height="20" viewBox="0 0 20 20" fill="none">
     <path d="M17.5 17.5L12.5 12.5L17.5 17.5ZM14.1667 8.33333C14.1667 9.09938 14.0158 9.85792 13.7226 10.5657C13.4295 11.2734 12.9998 11.9164 12.4581 12.4581C11.9164 12.9998 11.2734 13.4295 10.5657 13.7226C9.85792 14.0158 9.09938 14.1667 8.33333 14.1667C7.56729 14.1667 6.80875 14.0158 6.10101 13.7226C5.39328 13.4295 4.75022 12.9998 4.20854 12.4581C3.66687 11.9164 3.23719 11.2734 2.94404 10.5657C2.65088 9.85792 2.5 9.09938 2.5 8.33333C2.5 6.78624 3.11458 5.30251 4.20854 4.20854C5.30251 3.11458 6.78624 2.5 8.33333 2.5C9.88043 2.5 11.3642 3.11458 12.4581 4.20854C13.5521 5.30251 14.1667 6.78624 14.1667 8.33333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -143,7 +145,8 @@
                 <img class="gh-header-image" src="content/images/2025/06/IMG_9291.jpg" alt="Cabin Boulangerie - French Bread, Local Table">
 
         <div class="gh-header-content">
-                <h1 class="gh-header-primary lobster-two-bold">French Bread, Local Table</h1>
+                <h1 class="gh-header-logo"><img src="content/images/2025/06/Cabin-Logo-hero.png" alt="Cabin Boulangerie" width="300" height="300"></h1>
+                <p class="gh-header-primary lobster-two-bold">French Bread, Local Table</p>
                 <p class="gh-header-secondary">Traditional handcrafted bread, baked fresh in Outer Richmond, SF</p>
                 <a class="gh-header-action gh-header-button gh-btn" href="https://www.hotplate.com/cabinboulangerie">Place Order</a>
         </div>
@@ -161,26 +164,8 @@
 
 
             <div class="gh-list-feed">
-                            <article class="gh-list-item post tag-menu">
-    <a class="gh-list-item-inner" href="pain-au-lait/">
-            <figure class="gh-list-item-image">
-                <img
-                    srcset="content/images/size/w300/2026/04/IMG_1427.jpeg 300w, content/images/size/w720/2026/04/IMG_1427.jpeg 720w, content/images/size/w960/2026/04/IMG_1427.jpeg 960w, content/images/size/w1200/2026/04/IMG_1427.jpeg 1200w, content/images/size/w2000/2026/04/IMG_1427.jpeg 2000w"
-                    sizes="(max-width: 1200px) 100vw, 1200px"
-                    src="content/images/size/w720/2026/04/IMG_1427.jpeg"
-                    alt="Pain au Lait"
-                >
-            </figure>
-        <div class="gh-list-item-content">
-
-            <h3 class="gh-list-item-title">Pain au Lait</h3>
-
-                <p class="gh-list-item-excerpt">Artisanal Milk Bread made with Organic Wheat Flour, Organic Milk, Organic Eggs, Organic Cane Sugar, Butter and Pearl Sugar</p>
-
-
-        </div>
-    </a>
-</article>                            <article class="gh-list-item post tag-menu">
+                            <div class="menu-group menu-group-always"><h2>Always Available</h2><p>Baked every week</p></div>
+<article class="gh-list-item post tag-menu">
     <a class="gh-list-item-inner" href="la-baguette/">
             <figure class="gh-list-item-image">
                 <img
@@ -192,6 +177,7 @@
             </figure>
         <div class="gh-list-item-content">
 
+            <span class="menu-badge menu-badge-always">Always available</span>
             <h3 class="gh-list-item-title">Baguette</h3>
 
                 <p class="gh-list-item-excerpt">Artisanal Sourdough Baguette made with Organic Wheat flour and Organic Whole Wheat flour.</p>
@@ -199,7 +185,24 @@
 
         </div>
     </a>
-</article>                            <article class="gh-list-item post tag-menu">
+</article>
+<article class="gh-list-item post tag-menu">
+    <a class="gh-list-item-inner" href="epi-baguette/">
+            <figure class="gh-list-item-image">
+                <img src="content/images/menu/epi-baguette.jpg" width="1200" height="1200" loading="lazy" alt="Epi Baguette">
+            </figure>
+        <div class="gh-list-item-content">
+
+            <span class="menu-badge menu-badge-always">Always available</span>
+            <h3 class="gh-list-item-title">Epi Baguette</h3>
+
+                <p class="gh-list-item-excerpt">Artisanal Sourdough Baguette made with Organic Wheat flour and Organic Whole Wheat flour.</p>
+
+
+        </div>
+    </a>
+</article>
+<article class="gh-list-item post tag-menu">
     <a class="gh-list-item-inner" href="pain-de-campagne/">
             <figure class="gh-list-item-image">
                 <img
@@ -211,6 +214,7 @@
             </figure>
         <div class="gh-list-item-content">
 
+            <span class="menu-badge menu-badge-always">Always available</span>
             <h3 class="gh-list-item-title">Pain de Campagne</h3>
 
                 <p class="gh-list-item-excerpt">Artisanal Sourdough Bread made with Organic Wheat flour and Organic Whole Dark Rye flour.</p>
@@ -218,7 +222,62 @@
 
         </div>
     </a>
-</article>                            <article class="gh-list-item post tag-menu">
+</article>
+<div class="menu-group menu-group-occasional"><h2>Occasional &amp; Special</h2><p>A rotating selection &mdash; check <a href="https://www.hotplate.com/cabinboulangerie">this week&rsquo;s drop</a> for what&rsquo;s available</p></div>
+<article class="gh-list-item post tag-menu">
+    <a class="gh-list-item-inner" href="pain-au-lait/">
+            <figure class="gh-list-item-image">
+                <img
+                    srcset="content/images/size/w300/2026/04/IMG_1427.jpeg 300w, content/images/size/w720/2026/04/IMG_1427.jpeg 720w, content/images/size/w960/2026/04/IMG_1427.jpeg 960w, content/images/size/w1200/2026/04/IMG_1427.jpeg 1200w, content/images/size/w2000/2026/04/IMG_1427.jpeg 2000w"
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    src="content/images/size/w720/2026/04/IMG_1427.jpeg"
+                    alt="Pain au Lait"
+                >
+            </figure>
+        <div class="gh-list-item-content">
+
+            <span class="menu-badge menu-badge-occasional">Occasional / Special</span>
+            <h3 class="gh-list-item-title">Pain au Lait</h3>
+
+                <p class="gh-list-item-excerpt">Artisanal Milk Bread made with Organic Wheat Flour, Organic Milk, Organic Eggs, Organic Cane Sugar, Butter and Pearl Sugar</p>
+
+
+        </div>
+    </a>
+</article>
+<article class="gh-list-item post tag-menu">
+    <a class="gh-list-item-inner" href="baguette-au-sarrasin/">
+            <figure class="gh-list-item-image">
+                <img src="content/images/menu/baguette-au-sarrasin.jpg" width="1200" height="1200" loading="lazy" alt="Baguette au Sarrasin">
+            </figure>
+        <div class="gh-list-item-content">
+
+            <span class="menu-badge menu-badge-occasional">Occasional / Special</span>
+            <h3 class="gh-list-item-title">Baguette au Sarrasin</h3>
+
+                <p class="gh-list-item-excerpt">Artisanal Sourdough Buckwheat Baguette made with Organic Wheat flour and Organic Buckwheat flour.</p>
+
+
+        </div>
+    </a>
+</article>
+<article class="gh-list-item post tag-menu">
+    <a class="gh-list-item-inner" href="pain-au-sarrasin/">
+            <figure class="gh-list-item-image">
+                <img src="content/images/menu/pain-au-sarrasin.jpg" width="1200" height="1200" loading="lazy" alt="Pain au Sarrasin">
+            </figure>
+        <div class="gh-list-item-content">
+
+            <span class="menu-badge menu-badge-occasional">Occasional / Special</span>
+            <h3 class="gh-list-item-title">Pain au Sarrasin</h3>
+
+                <p class="gh-list-item-excerpt">Artisanal Sourdough Buckwheat Bread made with Organic Wheat flour and Organic Buckwheat flour.</p>
+
+
+        </div>
+    </a>
+</article>
+<article class="gh-list-item post tag-menu">
     <a class="gh-list-item-inner" href="brioche/">
             <figure class="gh-list-item-image">
                 <img
@@ -230,6 +289,7 @@
             </figure>
         <div class="gh-list-item-content">
 
+            <span class="menu-badge menu-badge-occasional">Occasional / Special</span>
             <h3 class="gh-list-item-title">Brioche</h3>
 
                 <p class="gh-list-item-excerpt">Braided Brioche made with Organic Wheat flour, Organic Free-Range Eggs, Organic Cane Sugar, Butter and Organic Madagascar Vanilla.</p>
@@ -237,7 +297,8 @@
 
         </div>
     </a>
-</article>                            <article class="gh-list-item post tag-menu">
+</article>
+<article class="gh-list-item post tag-menu">
     <a class="gh-list-item-inner" href="pain-nutritionnel-aux-grains/">
             <figure class="gh-list-item-image">
                 <img
@@ -249,6 +310,7 @@
             </figure>
         <div class="gh-list-item-content">
 
+            <span class="menu-badge menu-badge-occasional">Occasional / Special</span>
             <h3 class="gh-list-item-title">Pain Nutritionnel aux Grains</h3>
 
                 <p class="gh-list-item-excerpt">Artisanal Whole Wheat Sourdough Sandwich Bread made with Organic Wheat Flour, Organic Whole Wheat Flour and Organic Seeds (Rye, Sunflower, Sesame, Brown Flax)</p>
@@ -256,7 +318,24 @@
 
         </div>
     </a>
-</article>                            <article class="gh-list-item post tag-menu">
+</article>
+<article class="gh-list-item post tag-menu">
+    <a class="gh-list-item-inner" href="boule-de-lotus/">
+            <figure class="gh-list-item-image">
+                <img src="content/images/menu/boule-de-lotus.jpg" width="1200" height="1200" loading="lazy" alt="Boule de Lotus">
+            </figure>
+        <div class="gh-list-item-content">
+
+            <span class="menu-badge menu-badge-occasional">Occasional / Special</span>
+            <h3 class="gh-list-item-title">Boule de Lotus</h3>
+
+                <p class="gh-list-item-excerpt">Artisanal Sourdough Bread made with Organic Wheat flour, Organic Whole Dark Rye flour and Sesame Seeds.</p>
+
+
+        </div>
+    </a>
+</article>
+<article class="gh-list-item post tag-menu">
     <a class="gh-list-item-inner" href="petite-pain-depeautre/">
             <figure class="gh-list-item-image">
                 <img
@@ -268,6 +347,7 @@
             </figure>
         <div class="gh-list-item-content">
 
+            <span class="menu-badge menu-badge-occasional">Occasional / Special</span>
             <h3 class="gh-list-item-title">Petite Pain d&#x27;Épeautre</h3>
 
                 <p class="gh-list-item-excerpt">Small 100% Spelt Artisanal Sourdough Bread made with Organic Spelt flour</p>
@@ -275,7 +355,24 @@
 
         </div>
     </a>
-</article>                            <article class="gh-list-item post tag-menu">
+</article>
+<article class="gh-list-item post tag-menu">
+    <a class="gh-list-item-inner" href="pain-de-petit-epeautre-aux-noix/">
+            <figure class="gh-list-item-image">
+                <img src="content/images/menu/pain-de-petit-epeautre-aux-noix.jpg" width="1200" height="1200" loading="lazy" alt="Pain de Petit Épeautre aux Noix">
+            </figure>
+        <div class="gh-list-item-content">
+
+            <span class="menu-badge menu-badge-occasional">Occasional / Special</span>
+            <h3 class="gh-list-item-title">Pain de Petit Épeautre aux Noix</h3>
+
+                <p class="gh-list-item-excerpt">Artisanal Sourdough Bread made with Organic Wheat flour, Organic Einkorn flour and Organic Walnuts.</p>
+
+
+        </div>
+    </a>
+</article>
+<article class="gh-list-item post tag-menu">
     <a class="gh-list-item-inner" href="pain-de-tradition-a-la-semoule/">
             <figure class="gh-list-item-image">
                 <img
@@ -287,9 +384,26 @@
             </figure>
         <div class="gh-list-item-content">
 
+            <span class="menu-badge menu-badge-occasional">Occasional / Special</span>
             <h3 class="gh-list-item-title">Pain de Tradition à La Semoule</h3>
 
                 <p class="gh-list-item-excerpt">Artisanal Sourdough &quot;S&quot; Bread made with Organic Wheat Flour and Organic Semolina Flour</p>
+
+
+        </div>
+    </a>
+</article>
+<article class="gh-list-item post tag-menu">
+    <a class="gh-list-item-inner" href="marguerite/">
+            <figure class="gh-list-item-image">
+                <img src="content/images/menu/marguerite.jpg" width="1200" height="1200" loading="lazy" alt="Marguerite">
+            </figure>
+        <div class="gh-list-item-content">
+
+            <span class="menu-badge menu-badge-occasional">Occasional / Special</span>
+            <h3 class="gh-list-item-title">Marguerite</h3>
+
+                <p class="gh-list-item-excerpt">Artisanal Sourdough Daisy Dinner Rolls (6) made with Organic Wheat flour and Organic Whole Wheat flour. Contains Sesame.</p>
 
 
         </div>
