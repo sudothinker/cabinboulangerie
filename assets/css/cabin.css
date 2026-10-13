@@ -83,9 +83,9 @@
 #menu { scroll-margin-top: 90px; }
 html { scroll-behavior: smooth; }
 
-/* Homepage footer: the Contact section above already has the details, so keep the footer to the copyright */
-.home-template .gh-foot { padding-top: 8px; padding-bottom: 36px; }
-.home-template .cabin-contact { padding-bottom: 24px; }
+/* Pages with the Contact section keep the footer to just the copyright */
+body:has(.cabin-contact) .gh-foot { padding-top: 8px; padding-bottom: 36px; }
+.cabin-contact { padding-bottom: 24px; }
 
 /* About page */
 .cabin-about { max-width: 1040px; margin: clamp(24px, 3vw, 40px) auto 0; padding: 0 clamp(16px, 4vw, 40px) clamp(32px, 5vw, 64px); }
@@ -98,3 +98,7 @@ html { scroll-behavior: smooth; }
   .cabin-about-intro { grid-template-columns: 1fr; }
   .cabin-about-photo { order: -1; max-width: 520px; }
 }
+
+.cabin-contact-order { margin-top: 28px; }
+.cabin-order-btn { display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 34px; border-radius: 999px; background: #a28149; color: #fff !important; font-size: 1.7rem; font-weight: 600; text-decoration: none; transition: background-color .15s; }
+.cabin-order-btn:hover { background: #8a6c39; opacity: 1; }
