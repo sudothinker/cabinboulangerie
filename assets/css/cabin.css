@@ -69,3 +69,16 @@
 @media (max-width: 767px) { .cabin-reviews-grid { grid-template-columns: 1fr; } }
 .cabin-card-quote { margin: 10px 0 0; font-size: 1.35rem; line-height: 1.45; font-style: italic; color: #7a6236; }
 .cabin-card-quote span { font-style: normal; font-weight: 600; white-space: nowrap; }
+
+/* Menu grid: center rows that aren't full (e.g. the 3 "Always" breads) */
+.gh-list.grid .gh-list-feed { display: flex; flex-wrap: wrap; justify-content: center; gap: 64px 48px; }
+.gh-list.grid .gh-list-feed > .gh-list-item { flex: 0 0 100%; min-width: 0; }
+.gh-list.grid .gh-list-feed > .menu-group { flex: 0 0 100%; }
+@media (min-width: 768px) { .gh-list.grid .gh-list-feed > .gh-list-item { flex-basis: calc((100% - 48px) / 2); } }
+@media (min-width: 992px) { .gh-list.grid .gh-list-feed > .gh-list-item { flex-basis: calc((100% - 96px) / 3); } }
+@media (min-width: 1200px) { .gh-list.grid .gh-list-feed > .gh-list-item { flex-basis: calc((100% - 144px) / 4); } }
+
+/* Shorter homepage hero so the menu peeks into view */
+.gh-header.has-background-image { padding-top: clamp(4.8rem, 5vw + 2.4rem, 11rem); padding-bottom: clamp(4.8rem, 5vw + 2.4rem, 11rem); }
+#menu { scroll-margin-top: 90px; }
+html { scroll-behavior: smooth; }
