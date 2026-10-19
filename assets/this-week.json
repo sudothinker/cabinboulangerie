@@ -1,7 +1,7 @@
 {
   "pickup": "2026-10-23",
   "when": "Pickup or delivery · Fri, Oct 23",
-  "orderUrl": "https://www.hotplate.com/cabinboulangerie",
+  "orderUrl": "https://www.hotplate.com/cabinboulangerie/e22b8ef6-349c-4172-a295-b228fb5dfdb9",
   "items": [
     {"name": "Pain de Campagne", "price": "$12", "photo": "content/images/thumbs/campagne.jpg"},
     {"name": "Boule de Lotus", "price": "$13", "photo": "content/images/thumbs/boule-de-lotus.jpg"},
