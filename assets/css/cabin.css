@@ -102,3 +102,19 @@ body:has(.cabin-contact) .gh-foot { padding-top: 8px; padding-bottom: 36px; }
 .cabin-contact-order { margin-top: 28px; }
 .cabin-order-btn { display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 34px; border-radius: 999px; background: #a28149; color: #fff !important; font-size: 1.7rem; font-weight: 600; text-decoration: none; transition: background-color .15s; }
 .cabin-order-btn:hover { background: #8a6c39; opacity: 1; }
+
+/* This week's menu card in the homepage hero (filled from assets/this-week.json) */
+.cabin-week { width: min(100%, 440px); margin: 22px auto 0; padding: 18px 18px 16px; background: rgba(251, 248, 242, .94); color: #3b2a1e; border-radius: 18px; box-shadow: 0 10px 30px rgba(20, 12, 6, .35); text-align: left; backdrop-filter: blur(4px); }
+.cabin-week-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 10px; }
+.cabin-week-title { font-family: "Lobster Two", Poppins, serif; font-weight: 700; font-size: 2.6rem; line-height: 1; color: #5b3a24; }
+.cabin-week-when { font-size: 1.35rem; color: #7a5a43; text-align: right; }
+.cabin-week-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.cabin-week-list li { display: grid; grid-template-columns: 48px 1fr auto; align-items: center; gap: 12px; }
+.cabin-week-list img { width: 48px; height: 48px; object-fit: cover; border-radius: 10px; display: block; }
+.cabin-week-name { font-family: Poppins, sans-serif; font-weight: 500; font-size: 1.6rem; line-height: 1.2; }
+.cabin-week-price { font-family: Poppins, sans-serif; font-weight: 600; font-size: 1.6rem; color: #a28149; }
+.cabin-week .gh-btn { display: flex; justify-content: center; width: 100%; margin-top: 14px; }
+@media (max-width: 480px) { .cabin-week-head { flex-direction: column; align-items: flex-start; gap: 4px; } .cabin-week-when { text-align: left; } }
+.cabin-week[hidden], #cabin-order-fallback[hidden] { display: none !important; }
+.cabin-week .gh-btn { background: #a28149; color: #fff; }
+.cabin-week .gh-btn:hover { background: #8d6f3d; color: #fff; }
