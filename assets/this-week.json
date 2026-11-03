@@ -1,11 +1,10 @@
 {
-  "pickup": "2026-10-30",
-  "when": "Pickup or delivery · Fri, Oct 30",
-  "orderUrl": "https://www.hotplate.com/cabinboulangerie/d7028e8e-b3df-4fe7-bd70-5ca2efeec38d",
+  "pickup": "2026-11-06",
+  "when": "Pickup or delivery · Fri, Nov 6",
+  "orderUrl": "https://www.hotplate.com/cabinboulangerie/21b0f947-d1a4-46e1-9ffa-7d18d8c1b664",
   "items": [
     {"name": "Pain de Campagne", "price": "$12", "photo": "content/images/thumbs/campagne.jpg"},
-    {"name": "Pain au Sarrasin", "price": "$12", "photo": "content/images/thumbs/pain-au-sarrasin.jpg"},
-    {"name": "Baguette au Sarrasin", "price": "$9", "photo": "content/images/thumbs/baguette-au-sarrasin.jpg"},
+    {"name": "Pain au Lait", "price": "$15", "photo": "content/images/thumbs/pain-au-lait.jpg"},
     {"name": "Baguette", "price": "$8", "photo": "content/images/thumbs/baguette.jpg"},
     {"name": "Epi Baguette", "price": "$8", "photo": "content/images/thumbs/epi-baguette.jpg"}
   ]
