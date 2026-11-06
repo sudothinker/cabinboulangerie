@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cabin Boulangerie</title>
+<meta name="robots" content="noindex">
+<script>
+  // Old addresses from the Ghost site: each bread had its own page (/pain-au-lait/), and the menu was /tag/menu/.
+  // Send them to the bread's card on the menu; anything else goes home.
+  var BREADS = {"baguette-au-sarrasin":1,"boule-de-lotus":1,"brioche":1,"epi-baguette":1,"la-baguette":1,"marguerite":1,"pain-au-lait":1,"pain-au-sarrasin":1,"pain-de-campagne":1,"pain-de-petit-epeautre-aux-noix":1,"pain-de-tradition-a-la-semoule":1,"pain-nutritionnel-aux-grains":1,"petite-pain-depeautre":1};
+  var slug = location.pathname.replace(/^\/+|\/+$/g, "").split("/")[0];
+  if (BREADS[slug]) location.replace("/menu/#" + slug);
+  else if (slug === "tag") location.replace("/menu/" + location.hash);
+  else location.replace("/");
+</script>
+</head>
+<body style="font-family:sans-serif;background:#fbf8f2;color:#4a2f1d;text-align:center;padding:48px 16px">
+<p>Page not found. <a href="/menu/">See the menu</a> or <a href="/">go home</a>.</p>
+</body>
+</html>
