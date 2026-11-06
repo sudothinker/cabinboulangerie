@@ -69,6 +69,8 @@
 @media (max-width: 767px) { .cabin-reviews-grid { grid-template-columns: 1fr; } }
 .cabin-card-quote { margin: 10px 0 0; font-size: 1.35rem; line-height: 1.45; font-style: italic; color: #7a6236; }
 .cabin-card-quote span { font-style: normal; font-weight: 600; white-space: nowrap; }
+/* One italic line under a bread's description (e.g. "A classic French after school snack!"). */
+.cabin-card-tagline { margin: 8px 0 0; font-size: 1.45rem; line-height: 1.4; font-style: italic; color: #4a2f1d; }
 
 /* Menu grid: center rows that aren't full (e.g. the 3 "Always" breads) */
 .gh-list.grid .gh-list-feed { display: flex; flex-wrap: wrap; justify-content: center; gap: 64px 48px; }
