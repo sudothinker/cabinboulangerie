@@ -34,16 +34,24 @@
 })();
 
 // Hero: this week's menu card, read from assets/this-week.json.
-// Falls back to the plain Place Order button if the file is missing or the pickup date has passed.
+// Shows the card while pre-orders are open: until pickup day starts, unless the file says "closed": true.
+// Between bakes, the hero button becomes a sign-up for the next bake instead.
+// If the file can't be read, the plain Place Order button stays.
 (function () {
     var box = document.getElementById('cabin-week');
     var fallback = document.getElementById('cabin-order-fallback');
     if (!box || !window.fetch) return;
     function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
     fetch('assets/this-week.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (w) {
-        if (!w || !w.items || !w.items.length) return;
-        var end = new Date(w.pickup + 'T23:59:59');
-        if (isNaN(end) || end < new Date()) return;
+        if (!w) return;
+        var closes = new Date(w.pickup + 'T00:00:00');
+        if (w.closed || !w.items || !w.items.length || isNaN(closes) || closes <= new Date()) {
+            if (fallback) {
+                fallback.textContent = 'Get notified of the next bake';
+                fallback.href = 'https://www.hotplate.com/cabinboulangerie';
+            }
+            return;
+        }
         box.innerHTML =
             '<div class="cabin-week-head"><span class="cabin-week-title">This week&rsquo;s bake</span><span class="cabin-week-when">' + esc(w.when) + '</span></div>' +
             '<ul class="cabin-week-list">' + w.items.map(function (i) {
